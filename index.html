@@ -3,6 +3,45 @@
     
     <head>
         <title>This is a page about me.</title>
+        <style>
+            #comm{
+                background-color: aqua;
+                color: purple;
+            }
+            a{
+                text-decoration: none;
+            }
+            .course_descriptions{
+                font-size: 120%;
+            }
+            div{
+                width: 65%;
+            }
+            #python{
+                background-color: lightgoldenrodyellow;
+                color: tomato;
+            }
+            #math{
+                background-color: lightgreen;
+                color: green;
+            }
+            #orgb{
+                background-color: lightsalmon;
+                color: black;
+            }
+            #sys_admin{
+                background-color: lightskyblue;
+                color: blue;
+            }
+            #web_dev{
+                background-color: lightgray;
+                color: black;
+            }
+            #database{
+                background-color: lightseagreen;
+                color: saddlebrown;
+            }
+        </style>
     </head>
 
     <body>
@@ -14,13 +53,102 @@
         <p>
             I am taking the following courses at BCIT:<br>
             <ul>
-                <a href="https://www.bcit.ca/study/outlines/20193034329"><li>COMM 1116</li></a>
-                <a href="https://www.bcit.ca/study/outlines/20193034320"><li>ACIT 1515</li></a>
-                <a href="https://www.bcit.ca/study/outlines/20193041874"><li>MATH 1310</li></a>
-                <li>ORGB 1100</li>
-                <a href="https://www.bcit.ca/study/outlines/20193044280"><li>ACIT 1420</li></a>
-                <a href="https://www.bcit.ca/study/outlines/20193034356"><li>ACIT 1630</li></a>
-                <a href="https://www.bcit.ca/study/outlines/20193034323"><li>ACIT 1620</li></a>
+                
+                <a href="https://www.bcit.ca/study/outlines/20193034329">
+                    <div id="comm">
+                        <li>
+                            <h2>COMM 1116</h2>
+                            <p class="course_descriptions">
+                                This course will teach you how to be a professional and efficient communicator at work. 
+                                You will write effective business correspondence and instructions and deliver a formal oral presentation to your set.
+                            </p>
+                        </li>
+                    </div>
+                </a>
+                
+                <a href="https://www.bcit.ca/study/outlines/20193034320">
+                    <div id="python">
+                        <li>
+                            <h2>ACIT 1515</h2>
+                            <p class="course_descriptions">
+                                    The course introduces the fundamental concepts of programming for IT professionals,
+                                    with a focus on scripting languages that are commonly found in the workplace.
+                            </p>
+                        </li>
+                    </div>
+                </a>
+                
+                <a href="https://www.bcit.ca/study/outlines/20193041874">
+                    <div id="math">
+                        <li>
+                            <h2>MATH 1310</h2>
+                            <p class="course_descriptions">
+                                This course introduces students to the core mathematical constructs that underlie
+                                information technology. Topics to be covered include select topics from discrete 
+                                mathematics such as Boolean algebra, numeric systems and data representation, as 
+                                well as algebraic fundamentals such as algebraic operations, functions, equations 
+                                and logarithms, linear systems, vectors and matrices.
+                            </p>
+                        </li>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div id="orgb">
+                        <li>
+                            <h2>ORGB 1100</h2>
+                            <p class="course_descriptions">
+                                The course will focus on macro factors such as organizational structure, technology 
+                                and environment; group factors such as group dynamics, leadership, conflict, change 
+                                and decision making; and micro or individual factors such as personality, attitudes, 
+                                perception and motivation.
+                            </p>
+                        </li>
+                    </div>
+                </a>
+
+                <a href="https://www.bcit.ca/study/outlines/20193044280">
+                    <div id="sys_admin">
+                        <li>
+                            <h2>ACIT 1420</h2>
+                            <p class="course_descriptions">
+                                This course introduces students to the configuration, maintenance, and administration of 
+                                a Windows laptop computer. Topics include: An introduction to PC hardware, functions of 
+                                an operating system (OS), Windows OS architecture, file and disk management, BIOS and UEFI, 
+                                multi-boot, virtual machines, software installation/removal, performance tuning, backing up 
+                                and protecting data, troubleshooting, networking, security, virus protection, and firewalls.
+                            </p>
+                        </li>
+                    </div>    
+                </a>
+
+                <a href="https://www.bcit.ca/study/outlines/20193034356">
+                    <div id="database">
+                        <li>
+                            <h2>ACIT 1630</h2>
+                            <p class="course_descriptions">
+                                This course covers relational database technology, including basic concepts, relational
+                                algebra, enhanced entity-relationship data modeling, functional dependencies and 
+                                normalization, design methodology, SQL query language (DDL and DML), views, security and transaction management.
+                            </p>
+                        </li>
+                    </div>    
+                </a>
+                
+                <a href="https://www.bcit.ca/study/outlines/20193034323">
+                    <div id="web_dev">
+                        <li>
+                            <h2>ACIT 1620</h2>
+                            <p class="course_descriptions">
+                                This course introduces the fundamental principles and techniques for designing and
+                                developing effective Web sites. Topics include: hand-coding pages with HTML; styling
+                                text and content with CSS; adding dynamic features with client-side scripting techniques; 
+                                server-side scripting, and, managing files and Web sites using FTP software.
+                            </p>
+                        </li>
+                    </div>
+                </a>
+
             </ul>
         </p>
         <p>
