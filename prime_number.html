@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prime Numbers</title>
+</head>
+<body>
+    <h1 id = "text"></h1>
+    <script>
+
+        document.getElementById("text").style.textAlign = 'center';                
+
+
+        function getInput(){
+            num_to_check = prompt('Enter a number between 1 and 1000: ', "1");
+            num_to_check = parseInt(num_to_check);
+            return num_to_check;
+        }
+
+        function checkIfPrime(num_to_check){
+            for (i = 2; i <= num_to_check; i++){
+            if ((num_to_check % i) == 0){
+                if (num_to_check == i){
+                    return true;
+                    break;
+                }
+                else{
+                    break;
+                }
+                }
+            }
+        }
+        
+        function DisplayResult(bool){
+            if (bool == true){
+                document.getElementById("text").style.color = 'green';
+                document.getElementById("text").innerHTML = num_to_check + " is a prime number.";
+            }
+            else{
+                document.getElementById("text").style.color = "red";
+                document.getElementById("text").innerHTML = num_to_check + " is not a prime number.";
+            }
+        }                    
+        
+        num_to_check = getInput();
+        ans = checkIfPrime(num_to_check);
+        DisplayResult(ans);
+
+    </script>
+</body>
+</html>
