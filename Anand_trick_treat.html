@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        text-align: center;
+    }
+    input{
+        width: 10%;
+        height: 10%;
+    }
+    #text{
+        font-size: 400%;
+    }
+    img{
+        padding: 3%;
+        height: 50%;
+    }
+    </style>
+</head>
+<body>
+
+    <p id="text">
+            Welcome to BCIT COMP1536
+    </p>
+
+    <input type="button" value="orange" onclick="changeColor('text', 'orange');">
+    <input type="button" value="grey" onclick="changeColor('text','grey');">
+    <input type="button" value="cyan" onclick="changeColor('text','cyan');">
+
+    <br>
+
+    <img src="img/door.jpg" alt="Door Number 1" id="door1" onclick="openDoor('pennywise');">
+    <img src="img/door.jpg" alt="Door Number 2" id="door2" onclick="openDoor('candy');">
+    <img src="img/door.jpg" alt="Door Number 3" id="door3" onclick="openDoor('spooky');">
+
+    <script>
+
+        function changeColor(id, colour){
+            document.getElementById(id).style.color=colour;
+        }
+
+        function openDoor(image){
+            if (image == 'pennywise'){
+                document.getElementById("door1").src="img/pennywise.jpg";
+            }
+            else if (image == 'spooky'){
+                document.getElementById("door3").src="img/spooky.jpg";
+            }
+            else if (image == 'candy'){
+                document.getElementById("door2").src="img/candy.jpg";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
